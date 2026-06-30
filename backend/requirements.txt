@@ -1,0 +1,9 @@
+Flask
+Flask-CORS
+torch
+torchvision
+opencv-python
+Pillow
+numpy
+python-dotenv
+Werkzeug
