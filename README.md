@@ -122,9 +122,12 @@ chmod +x run.sh
 
 Add screenshots here:
 
-- 🏠 Home Page
-- 📤 Image Upload
-- 🤖 Food Detection
+- 🏠 Home Page<img width="1805" height="870" alt="Screenshot 2026-06-30 100331" src="https://github.com/user-attachments/assets/3c1948db-81c6-420f-b050-d3043dad1fe4" />
+
+- 📤 Image Upload<img width="1802" height="892" alt="nf2" src="https://github.com/user-attachments/assets/eaeaa41a-c32b-4d2d-a71e-de61d82e8c8d" />
+
+- 🤖 Food Detection<img width="1775" height="891" alt="Screenshot 2026-06-30 100526" src="https://github.com/user-attachments/assets/4a888ebe-35e1-48d2-9508-2e5fc3f7ebad" />
+
 - 📊 Nutrition & Calorie Results
 
 ---
@@ -143,8 +146,7 @@ Add screenshots here:
 ## 👩‍💻 Contributors
 
 - Lohita Reddy
-- Team Members
-
+  NGIT CSE 
 ---
 
 ## 📄 License
