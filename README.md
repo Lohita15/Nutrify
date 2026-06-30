@@ -1,6 +1,6 @@
 # 🥗 NutriFy – AI-Powered Indian Food Recognition & Calorie Estimation
 
-NutriFy is a full-stack web application that uses Artificial Intelligence to recognize Indian food items from images and estimate their calorie and nutritional information. The application combines YOLOv5 object detection with a Flask backend and an interactive frontend to help users make healthier food choices.
+NutriFy is a full-stack web application that uses Artificial Intelligence to recognize Indian food items from images and estimate their calorie and nutritional information. The application combines YOLOv8n instance segmentation model with a Flask backend and an interactive frontend to help users make healthier food choices.
 
 ---
 
@@ -30,7 +30,7 @@ NutriFy is a full-stack web application that uses Artificial Intelligence to rec
 - Pandas
 
 ### Artificial Intelligence
-- YOLOv5
+- YOLOv8n-instance segmentation
 - PyTorch
 - OpenCV
 - Pillow
@@ -63,7 +63,6 @@ Nutrify-main/
 ├── test_model.py
 ├── run.sh
 ├── run.bat
-├── yolov5s.pt
 ├── README.md
 └── LICENSE
 ```
