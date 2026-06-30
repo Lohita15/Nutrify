@@ -7,3 +7,4 @@ Pillow
 numpy
 python-dotenv
 Werkzeug
+guinicorn
