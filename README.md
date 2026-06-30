@@ -75,7 +75,7 @@ Nutrify-main/
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Nutrify.git
+git clone https://github.com/Lohita15/Nutrify.git
 cd Nutrify-main
 ```
 
