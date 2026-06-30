@@ -4,7 +4,7 @@ import os
 import sys
 from werkzeug.utils import secure_filename
 import pandas as pd
-
+import traceback
 import math
 
 # --- YOLO IMPORTS ---
@@ -291,11 +291,11 @@ def upload_meal():
             }), 200
             
         except Exception as e:
-            print(f"❌ Inference error: {e}")
-            return jsonify(ResultFormatter.format_error("Could not analyze meal")), 500
+           print("❌ Inference error:")
+           traceback.print_exc()
+           return jsonify(ResultFormatter.format_error(f"Could not analyze meal: {str(e)}")), 500
             
-    except Exception as e:
-        return jsonify(ResultFormatter.format_error(f"Upload failed: {str(e)}")), 500
+    
 
 @app.route('/api/meal_analysis_result', methods=['GET'])
 def get_meal_result():
