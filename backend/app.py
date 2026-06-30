@@ -332,16 +332,19 @@ def serve_html(filename):
         return "File not found", 404
     except Exception as e:
         return f"Error: {str(e)}", 500
+    
+ 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     initialize_yolo_model()
-    
+
     print("🚀 Starting NutriFy Server...")
-    print("📍 Server running at http://localhost:5000")
-    
+
+    port = int(os.environ.get("PORT", 5000))
+
     app.run(
-        debug=True,
-        host='0.0.0.0',
-        port=5000,
-        use_reloader=False 
+        host="0.0.0.0",
+        port=port,
+        debug=False,
+        use_reloader=False
     )
