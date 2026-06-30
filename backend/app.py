@@ -334,9 +334,9 @@ def serve_html(filename):
         return f"Error: {str(e)}", 500
     
  
-
+initialize_yolo_model()
 if __name__ == "__main__":
-    initialize_yolo_model()
+    
 
     print("🚀 Starting NutriFy Server...")
 
