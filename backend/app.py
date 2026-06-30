@@ -333,7 +333,6 @@ def serve_html(filename):
     except Exception as e:
         return f"Error: {str(e)}", 500
     
- 
 initialize_yolo_model()
 if __name__ == "__main__":
     
