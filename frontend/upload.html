@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Meal - NutriFy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_v2.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="/" class="logo">
+                    <span class="logo-icon">🥗</span>
+                    <span class="logo-text">NutriFy</span>
+                </a>
+                <ul class="nav-links">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="index.html#features" class="nav-link">Features</a></li>
+                    <li><a href="index.html#about" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upload Section -->
+    <section class="upload-section">
+        <div class="container">
+            <div class="upload-container fade-in">
+                <h1 class="upload-title">🍽️ Analyze Your Meal</h1>
+                <p class="upload-subtitle">Upload an image of your food and let AI identify the dishes and estimate calories</p>
+
+                <!-- Upload Area -->
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon animate-float">📸</div>
+                    <h2>Drag & Drop Your Image</h2>
+                    <p class="upload-hint">or click to select from your device</p>
+                    <input 
+                        type="file" 
+                        id="imageInput" 
+                        class="file-input" 
+                        accept="image/*"
+                        hidden
+                    >
+                </div>
+
+                <!-- Image Preview -->
+                <div id="previewContainer" class="preview-container hidden">
+                    <div class="preview-content">
+                        <div class="preview-image-wrapper">
+                            <img id="previewImage" src="" alt="Preview" class="preview-image">
+                            <button id="removeBtn" class="btn-remove" title="Remove image">✕</button>
+                        </div>
+                        <div class="preview-info">
+                            <h3 id="fileName" class="file-name">image.jpg</h3>
+                            <p id="fileSize" class="file-size">0 MB</p>
+                            <button id="analyzeBtn" class="btn btn-primary btn-large">
+                                <span class="btn-icon">⚡</span>
+                                Analyze Meal
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading State -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <h2>Processing Your Meal...</h2>
+            <p>AI is analyzing your food image</p>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Error State -->
+    <div id="errorDialog" class="error-dialog hidden">
+        <div class="error-content">
+            <div class="error-icon">⚠️</div>
+            <h2 id="errorTitle">Upload Failed</h2>
+            <p id="errorMessage">An error occurred. Please try again.</p>
+            <button id="errorCloseBtn" class="btn btn-primary">Try Again</button>
+        </div>
+    </div>
+
+    <!-- Info Section -->
+    <section class="info-section">
+        <div class="container">
+            <div class="info-grid">
+                <div class="info-card fade-in">
+                    <h3>✨ Supported Dishes</h3>
+                    <p>Our AI recognizes 20+ popular Indian dishes including biryani, masaladosa, samosa, gulabjamun and more</p>
+                </div>
+                <div class="info-card fade-in">
+                    <h3>📷 Image Requirements</h3>
+                    <p>JPG, PNG, GIF formats | Max 10MB | Clear, well-lit photos work best</p>
+                </div>
+                <div class="info-card fade-in">
+                    <h3>⚡ Fast Results</h3>
+                    <p>Get results in seconds with our optimized deep learning pipeline</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 SwaadTrack. Smart AI for Indian Food. Made with 💚 for healthy eating</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>

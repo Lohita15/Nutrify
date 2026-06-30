@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NutriFy - Smart AI for Indian Food Calories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles_v2.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <span class="logo-icon">🥗</span>
+                    <span class="logo-text">NutriFy</span>
+                    
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#features" class="nav-link">Features</a></li>
+                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="/upload" class="nav-link btn-nav">Get Started</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text fade-in">
+                    <h1 class="hero-title">
+                        Smart AI for<br>
+                        <span class="gradient-text">Indian Food Calories</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Upload a photo of your meal and get instant calorie estimation, nutrition insights powered by deep learning.
+                    </p>
+                    <a href="/upload" class="btn btn-primary btn-large fade-in-delayed-1">
+                        <span class="btn-icon">📸</span>
+                        Start Analyzing
+                    </a>
+                </div>
+                <div class="hero-image fade-in-delayed-2">
+                    <div class="image-placeholder">
+                        <div class="animated-food">
+                            <div class="food-item">🍛</div>
+                            <div class="food-item">🍜</div>
+                            <div class="food-item">🥟</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Why Choose NutriFy?</h2>
+            <div class="features-grid">
+                <!-- Feature 1: AI Recognition -->
+                <div class="feature-card fade-in">
+                    <div class="feature-icon ai-icon">🤖</div>
+                    <h3>AI Recognition</h3>
+                    <p>Advanced deep learning (YOLOv5 + ViT) identifies your Indian dishes with 95%+ accuracy</p>
+                </div>
+
+                <!-- Feature 2: Instant Calories -->
+                <div class="feature-card fade-in">
+                    <div class="feature-icon analytics-icon">📊</div>
+                    <h3>Instant Calories</h3>
+                    <p>Get accurate calorie estimation based on food type and portion size in seconds</p>
+                </div>
+
+                <!-- Feature 3: Nutrition Insights -->
+                <div class="feature-card fade-in">
+                    <div class="feature-icon health-icon">💪</div>
+                    <h3>Nutrition Insights</h3>
+                    <p>Personalized health recommendations based on your meal composition</p>
+                </div>
+
+                <!-- Feature 4: Smart Recommendations 
+                <div class="feature-card fade-in">
+                    <div class="feature-icon bulb-icon">💡</div>
+                    <h3>Smart Recommendations</h3>
+                    <p>Get intelligent suggestions to balance your daily nutrition intake</p>
+                </div>-->
+
+                <!-- Feature 5: Fast & Accurate -->
+                <div class="feature-card fade-in">
+                    <div class="feature-icon fast-icon">⚡</div>
+                    <h3>Fast & Accurate</h3>
+                    <p>Real-time processing with high-accuracy food detection and classification</p>
+                </div>
+
+                <!-- Feature 6: Easy to Use -->
+                <div class="feature-card fade-in">
+                    <div class="feature-icon easy-icon">👌</div>
+                    <h3>Easy to Use</h3>
+                    <p>Simple, intuitive interface - just upload and get instant results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <div class="steps-timeline">
+                <!-- Step 1 -->
+                <div class="timeline-item fade-in">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>📸 Upload Image</h3>
+                        <p>Take a photo of your meal or upload from gallery. Our system accepts all common image formats.</p>
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div class="timeline-arrow">→</div>
+
+                <!-- Step 2 -->
+                <div class="timeline-item fade-in">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>🔍 Food segmentation</h3>
+                        <p>YOLOv8n-seg Instance segmentation model does detection,classification and segmentation </p>
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <!--<div class="timeline-arrow">→</div>-->
+
+                <!-- Step 3 -->
+                <!--<div class="timeline-item fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>🧠 Classify Dishes</h3>
+                        <p>Vision Transformer (ViT) classifies each food item from our Indian cuisine database.</p>
+                    </div>
+                </div>-->
+
+                <!-- Arrow -->
+                <div class="timeline-arrow">→</div>
+
+                <!-- Step 4 -->
+                <div class="timeline-item fade-in">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>📊 Calorie Estimate</h3>
+                        <p>Calculate total calories based on identifying its a plate or bowl and doing portion size estimation</p>
+                    </div>
+                </div>
+
+                <!-- Arrow -->
+                <div class="timeline-arrow">→</div>
+
+                <!-- Step 5 -->
+               <!-- <div class="timeline-item fade-in">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>💡 Get Recommendations</h3>
+                        <p>Receive personalized health insights and nutrition recommendations instantly.</p>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper">
+                <div class="about-content fade-in">
+                    <h2 class="section-title">About NutriFy</h2>
+                    <p>
+                        NutriFy is a cutting-edge AI-powered nutrition analysis platform designed specifically for Indian cuisine. 
+                        Built with state-of-the-art deep learning models, it consists of YOLOv8n-seg an Instance segmentation model 
+                        to deliver accurate, instant nutritional insights.
+                    </p>
+                    <p>
+                        Our mission is to make healthy eating easier by providing instant, accurate nutritional information for 
+                        Indian food, helping users make informed dietary choices and maintain a balanced lifestyle.
+                    </p>
+                    <div class="tech-stack">
+                        <h4>Built With</h4>
+                        <div class="tech-badges">
+                            <span class="badge">🤖 YOLOv8n-seg</span>
+                            <span class="badge">🔥 PyTorch</span>
+                            <span class="badge">⚡ Flask API</span>
+                            <span class="badge">🎨 Modern UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image fade-in-delayed-1">
+                    <div class="about-card">
+                        <svg viewBox="0 0 200 200" class="about-illustration">
+                            <circle cx="100" cy="100" r="90" fill="#e8f5e9" stroke="#4caf50" stroke-width="2"/>
+                            <text x="100" y="110" text-anchor="middle" font-size="60" dominant-baseline="middle">🥗</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta">
+        <div class="container">
+            <h2>Ready to Transform Your Nutrition Journey?</h2>
+            <p>Start analyzing your meals with AI-powered precision today</p>
+            <a href="/upload" class="btn btn-primary btn-large">
+                <span class="btn-icon">🚀</span>
+                Launch NutriFy Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NutriFy</h4>
+                    <p>Smart AI for Indian Food Calories</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="/upload">Get Started</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Technology</h4>
+                    <ul>
+                        <li>YOLOv8n-segmentation</li>
+                        <li>Deep Learning</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 NutriFy. All rights reserved. | Made with 💚 for healthy eating</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
